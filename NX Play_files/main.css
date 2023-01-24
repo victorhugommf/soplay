@@ -251,6 +251,7 @@ p.filmes-subTitulo {
         border: 1px solid #3B4A54;
         border-radius: 6px;
         width: 400px;
+        max-width: 90%;
         height: 40px;
         box-sizing: border-box;
         font-size: 15px;
@@ -558,6 +559,10 @@ p.filmes-subTitulo {
 
     .filmes-secMain {
         margin-bottom: 0 !important;
+    }
+
+    #emailIput {
+        margin-bottom: 0;
     }
 
     .faq-selec {
