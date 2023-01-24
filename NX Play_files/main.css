@@ -44,6 +44,15 @@ body {
     height: auto !important;
 }
 
+.assinar-titulo {
+    font-weight: 900;
+    font-size: 50px;
+    text-align: center;
+    max-width: 1000px;
+    text-shadow: rgba(0, 0, 0, 0.75) 0px 4px 12px;
+    margin-top: 150px;
+}
+
 #emailIput {
     margin: 40px auto;
     padding: 35px;
@@ -89,9 +98,103 @@ p.subtitle {
     color: #8F8F8F;
 }
 
+.filmes-titulo {
+    font-weight: 700;
+    font-size: 42px;
+    text-align: center;
+    max-width: 800px;
+    text-shadow: rgba(0, 0, 0, 0.75) 0px 4px 12px;
+}
+
+.filmes-secMain {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: flex-end;
+    align-self: center;
+    align-items: center;
+    color: white;
+    margin-bottom: 50px;
+}
+
+.filmes-secMain img {
+    margin-top: -66px;
+    position: relative;
+    z-index: 0;
+    width: 100%;
+    max-width: 1500px;
+}
+
+p.filmes-subTitulo {
+    margin: 0 auto;
+    margin-top: 25px;
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+    max-width: 560px;
+    text-shadow: rgba(0, 0, 0, 0.75) 0px 4px 12px;
+}
+
+.assinar-secMain {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background: url(Capa_01.png) center center / cover, linear-gradient(173.26deg, #0A3744 6.07%, #010101 58.52%);
+    background-position: top;
+    box-shadow: rgb(1, 1, 1) 0px -50px 200px inset, rgb(1, 1, 1) -20px 0px 80px inset, rgb(1, 1, 1) 20px 0px 80px inset;
+    color: white;
+    margin-bottom: 100px;
+    padding-top: 180px;
+}
+
+.dispositivos-titulo {
+    font-weight: 700;
+    font-size: 42px;
+    max-width: 600px;
+    text-align: center;
+    z-index: 1;
+    margin-bottom: 50px;
+}
+
+#Dispositivos {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    align-self: center;
+    height: 700px;
+    width: 100%;
+    color: white;
+    margin-bottom: 100px;
+    background-position-x: 200px;
+}
+
 .plataformasDiv {
     display: flex;
     flex-direction: column;
+    align-self: center;
+    min-width: 50%;
+    align-items: center;
+    position: relative;
+    z-index: 99;
+}
+
+.dispositivosBkg {
+    display: flex;
+    flex-grow: 1;
+    position: relative;
+    z-index: 0;
+}
+
+.dispositivosBkg img {
+    width: 100%;
+    object-fit: cover;
+    overflow: visible;
+}
+
+.dispositivosBkg img.mobile {
+    display: none;
 }
 
 @media (max-width: 1100px) {
@@ -106,6 +209,20 @@ p.subtitle {
 
     .subtitulo {
         font-size: 16px !important;
+    }
+
+    .assinar-titulo {
+        margin-top: 80px;
+    }
+
+    #buttonTeste {
+        padding: 10px 50px;
+        font-size: 20px;
+    }
+
+    #buttonAssinar {
+        padding: 10px 50px;
+        font-size: 20px;
     }
 
     /* HEADER */
@@ -126,8 +243,19 @@ p.subtitle {
     /* FIM HEADER */
 
     /* ASSINAR */
-    .assinar-secMain {
-        height: 600px !important;
+    .assinar-secMain {}
+
+    #emailIput {
+        margin: 40px auto;
+        padding: 25px;
+        border: 1px solid #3B4A54;
+        border-radius: 6px;
+        width: 400px;
+        height: 40px;
+        box-sizing: border-box;
+        font-size: 15px;
+        font-weight: 200;
+        font-style: italic;
     }
 
     .assinar-titulo {
@@ -160,13 +288,11 @@ p.subtitle {
     .canais-subSec2 {
         background-size: contain !important;
         background-position: right !important;
-        margin-top: -200px !important;
         width: 700px !important;
         height: 400px !important;
     }
 
     .canais-titulo {
-        margin-top: -30px !important;
         max-width: 100% !important;
     }
 
@@ -192,14 +318,10 @@ p.subtitle {
 
     /* FILMES */
     .filmes-secMain {
-        height: 300px !important;
         margin-top: 0 !important;
     }
 
-    .filmes-titulo {
-        margin-top: -60px !important;
-        max-width: 300px !important;
-    }
+    .filmes-titulo {}
 
     .filmes-subTitulo {
         margin-top: 10px !important;
@@ -207,21 +329,15 @@ p.subtitle {
 
     /* FIM FILMES */
 
-    .dispositivos-secMain {
-        flex-wrap: wrap !important;
-        height: 300px !important;
-        margin-top: 120px !important;
+    #Dispositivos {
+        height: 500px;
     }
 
-    .dispositivos-titulo {
-        margin-top: -70px !important;
-        max-width: 300px !important;
-        z-index: 5 !important;
-    }
+    .dispositivos-secMain {}
 
-    .faq-secMain {
-        margin-top: -200px !important;
-    }
+    .dispositivos-titulo {}
+
+    .faq-secMain {}
 
     .faq-titulo {
         margin-bottom: 0 !important;
@@ -247,7 +363,6 @@ p.subtitle {
 
     .mapa-secMain {
         height: 250px !important;
-        margin-top: -100px !important;
     }
 
     .mapa-titulo {
@@ -274,14 +389,48 @@ p.subtitle {
 
 }
 
-@media (max-width: 600px) {
-    .filmes-secMain {
-        margin-top: -10px !important;
-    }
+@media (max-width: 768px) {
+    .filmes-secMain {}
 
     .filmes-desc {
         font-size: 14px !important;
     }
+
+    .plataformasDiv {
+        min-width: 100%;
+
+    }
+
+    .plataformasDiv img.desktop {
+        display: none;
+    }
+
+    #Dispositivos {
+        height: auto;
+    }
+
+    .dispositivos-titulo {
+        margin-bottom: 0;
+    }
+
+    .dispositivosBkg {
+        flex-direction: column;
+        align-items: center;
+        margin-top: -50px;
+    }
+
+    .dispositivosBkg img.dispositivosImg {
+        width: 150%;
+    }
+
+    .dispositivosBkg img.mobile {
+        display: block;
+        width: 80%;
+        max-width: 300px;
+        margin-top: -50px;
+    }
+
+
 
     .filmes-btn,
     .dispositivos-btn {
@@ -295,15 +444,20 @@ p.subtitle {
         font-size: 14px !important;
     }
 
-    .dispositivos-secMain {
-        margin-top: 100px !important;
-    }
-
     .canais-secMain {
         margin-top: 60px !important;
         height: 300px !important;
         margin-bottom: 150px !important;
     }
+
+    .filmes-secMain img {
+        margin-top: -30px;
+    }
+
+    .dispositivos-secMain {
+        flex-wrap: wrap;
+    }
+
 
     .canais-subTitulo {
         max-width: 500px !important;
@@ -315,7 +469,6 @@ p.subtitle {
     }
 
     .faq-secMain {
-        margin-top: -260px !important;
         margin-bottom: 50px;
     }
 
@@ -335,7 +488,6 @@ p.subtitle {
 
     .mapa-secMain {
         height: 200px !important;
-        margin-top: -120px !important;
     }
 
     .mapa-titulo {
@@ -398,20 +550,13 @@ p.subtitle {
         margin-top: 50px !important;
     }
 
-    .dispositivos-titulo {
-        margin-top: -30px !important;
-    }
+    .dispositivos-titulo {}
 
-    .canais-secMain {
-        margin-top: -120px !important;
-    }
+    .canais-secMain {}
 
-    .filmes-titulo {
-        margin-top: -30px !important;
-    }
+    .filmes-titulo {}
 
     .filmes-secMain {
-        margin-top: -80px !important;
         margin-bottom: 0 !important;
     }
 
@@ -449,7 +594,6 @@ p.subtitle {
 
     .dispositivos-desc,
     .filmes-desc {
-        margin-top: -20px !important;
         font-size: 10px !important;
     }
 
@@ -465,7 +609,6 @@ p.subtitle {
     }
 
     .faqExpand {
-        margin-top: -30px !important;
         margin-bottom: 230px !important;
     }
 }

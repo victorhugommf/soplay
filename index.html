@@ -12,8 +12,6 @@
     <title>SOPlay</title>
 
     <link rel="stylesheet" href="./NX Play_files/main.css">
-    <script type="module" src="./NX Play_files/main.js"></script>
-    <script src="chrome-extension://mooikfkahbdckldjjndioackbalphokd/assets/prompt.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.3.min.js"
         integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
 </head>
@@ -28,10 +26,8 @@
                 class="header-btnEntrar" id="Cadastro"
                 style="width: 130px; height: 50px; text-align: center; border: 1px solid white; border-radius: 5px; background-color: transparent; color: white; font-size: 22px; cursor: pointer;">ENTRAR</button>
         </section>
-        <section class="assinar-secMain" id="Assine"
-            style="display: flex; flex-direction: column; height: 1000px; width: 100%; justify-content: center; align-items: center; background: url(./NX\ Play_files/s1BG.png) center center / cover, linear-gradient(rgb(36, 29, 81), rgb(1, 1, 1)); box-shadow: rgb(1, 1, 1) 0px -50px 200px inset, rgb(1, 1, 1) -20px 0px 80px inset, rgb(1, 1, 1) 20px 0px 80px inset; color: white; margin-bottom:200px; padding-top: 180px;">
-            <h1 class="assinar-titulo titulo"
-                style="font-weight: 900; font-size: 50px; text-align: center; max-width: 1000px; text-shadow: rgba(0, 0, 0, 0.75) 0px 4px 12px; margin-top: 200px;">
+        <section class="assinar-secMain" id="Assine">
+            <h1 class="assinar-titulo titulo">
                 MILHARES DE FILMES, SÉRIES E DESENHOS EM UM SÓ LUGAR!</h1>
             <p class="assinar-subTitulo subtitulo"
                 style="margin-top: 25px; font-weight: 400; font-size: 24px; text-align: center; max-width: 560px; text-shadow: rgba(0, 0, 0, 0.75) 0px 4px 12px;">
@@ -56,26 +52,26 @@
                 ASSINE JÁ
             </button>
         </section>
-        <section class="filmes-secMain" id="Filmes"
-            style="display: flex; flex-direction: column; height: 650px; width: 100%; justify-content: flex-start; align-self: center; align-items: center; background: url(./NX\ Play_files/Imagens_Soplay_01.png) center center / contain no-repeat; color: white; margin-bottom: 50px;">
-            <h1 class="filmes-titulo titulo"
-                style="font-weight: 700; font-size: 42px; text-align: center; max-width: 800px; margin-top: -140px; text-shadow: rgba(0, 0, 0, 0.75) 0px 4px 12px;">
-                FILMES, SÉRIES, DOCUMENTÁRIOS E SHOWS</h1>
-            <p class="filmes-subTitulo subtitulo"
-                style="margin-top: 25px; font-weight: 400; font-size: 24px; text-align: center; max-width: 560px; text-shadow: rgba(0, 0, 0, 0.75) 0px 4px 12px;">
-                conteúdo de qualidade pra toda a família.</p>
+        <section class="filmes-secMain" id="Filmes">
+            <div style="position: relative; z-index: 99;">
+                <h1 class="filmes-titulo titulo">
+                    FILMES, SÉRIES, DOCUMENTÁRIOS E SHOWS</h1>
+                <p class="filmes-subTitulo subtitulo">
+                    conteúdo de qualidade pra toda a família.</p>
+            </div>
+            <img src="./NX Play_files/Imagens_Soplay_01.png" alt="">
         </section>
 
-        <section class="dispositivos-secMain" id="Dispositivos"
-            style="display: flex; flex-direction: row; align-items: center; align-self: center; height: 700px; width: 100%; background: url(./NX\ Play_files/Imagems_Soplay_02.png) no-repeat; color: white; margin-bottom: 100px; background-position-x: 200px;">
-
-
+        <section class="dispositivos-secMain" id="Dispositivos">
             <div class="plataformasDiv">
-                <h1 class="dispositivos-titulo titulo"
-                    style="font-weight: 700; font-size: 42px; max-width: 600px; text-align: center; z-index: 1; margin-bottom: 50px; ">
+                <h1 class="dispositivos-titulo titulo">
                     PRA ASSISTIR QUANDO QUISER E NOS MELHORES DISPOSITIVOS</h1>
 
-                <img src="./NX Play_files/plataformas.png" style="width: 50%; margin: 0 auto;">
+                <img src="./NX Play_files/plataformas.png" style="width: 50%; margin: 0 auto;" class="desktop">
+            </div>
+            <div class="dispositivosBkg">
+                <img src="./NX Play_files/Imagens_Soplay_02.png" class="dispositivosImg">
+                <img src="./NX Play_files/plataformas_Mob.png" alt="" class="mobile">
             </div>
 
         </section>
@@ -86,7 +82,7 @@
                 style="font-weight: 700; height: 35px; font-size: 34px; text-align: center; max-width: 800px; text-shadow: rgba(0, 0, 0, 0.75) 0px 4px 12px; margin-bottom: 50px;">
                 PERGUNTAS FREQUENTES</h1>
             <div class="faq-secSelect" style="display: flex; flex-direction: column; align-items: center; width: 100%;">
-                <div class="faq-selec-0 faq-selec" onclick="faqJS()"
+                <div class="faq-selec-0 faq-selec"
                     style="width: 100%; height: 50px; padding: 0px 50px; text-align: center; margin-top: 20px; font-size: 22px; font-weight: 400; outline: rgb(59, 74, 84) solid 1px; border-radius: 5px; background-color: var(--nx-bgColor); color: rgb(201, 201, 201); line-height: 2; overflow: hidden; cursor: pointer;">
                     O que é o SOPlay?<p class="faq-opc"
                         style="text-align: left; margin-top: 50px; max-width: 100%; padding: 25px 0px; align-self: center; border-top: 1px solid rgb(85, 85, 85);">
@@ -103,7 +99,7 @@
                         conteúdo de qualidade por um valor acessível.
                     </p>
                 </div>
-                <div class="faq-selec-1 faq-selec" onclick="faqJS()"
+                <div class="faq-selec-1 faq-selec"
                     style="width: 100%; height: 50px; padding: 0px 50px; text-align: center; margin-top: 20px; font-size: 22px; font-weight: 400; outline: rgb(59, 74, 84) solid 1px; border-radius: 5px; background-color: var(--nx-bgColor); color: rgb(201, 201, 201); line-height: 2; overflow: hidden; cursor: pointer;">
                     Como acesso a NX Play?<p class="faq-opc"
                         style="text-align: left; margin-top: 50px; max-width: 100%; padding: 25px 0px; align-self: center; border-top: 1px solid rgb(85, 85, 85);">
@@ -115,7 +111,7 @@
                         Tizen), TV LG (WebOs 5.0 ou acima), Roku ou utilizando um Set Top Box.
                     </p>
                 </div>
-                <div class="faq-selec-2 faq-selec" onclick="faqJS()"
+                <div class="faq-selec-2 faq-selec"
                     style="width: 100%; height: 50px; padding: 0px 50px; text-align: center; margin-top: 20px; font-size: 22px; font-weight: 400; outline: rgb(59, 74, 84) solid 1px; border-radius: 5px; background-color: var(--nx-bgColor); color: rgb(201, 201, 201); line-height: 2; overflow: hidden; cursor: pointer;">
                     Quanto custa?<p class="faq-opc"
                         style="text-align: left; margin-top: 50px; max-width: 100%; padding: 25px 0px; align-self: center; border-top: 1px solid rgb(85, 85, 85);">
@@ -126,7 +122,7 @@
                         pelo e-mail: comercial@SOPlay.com.br .
                     </p>
                 </div>
-                <div class="faq-selec-3 faq-selec" onclick="faqJS()"
+                <div class="faq-selec-3 faq-selec"
                     style="width: 100%; height: 50px; padding: 0px 50px; text-align: center; margin-top: 20px; font-size: 22px; font-weight: 400; outline: rgb(59, 74, 84) solid 1px; border-radius: 5px; background-color: var(--nx-bgColor); color: rgb(201, 201, 201); line-height: 2; overflow: hidden; cursor: pointer;">
                     Posso testar a SOPlay?<p class="faq-opc"
                         style="text-align: left; margin-top: 50px; max-width: 100%; padding: 25px 0px; align-self: center; border-top: 1px solid rgb(85, 85, 85);">
@@ -135,7 +131,7 @@
                         continuar na plataforma, solicite o cancelamento pelo link na plataforma.
                     </p>
                 </div>
-                <div class="faq-selec-4 faq-selec" onclick="faqJS()"
+                <div class="faq-selec-4 faq-selec"
                     style="width: 100%; height: 50px; padding: 0px 50px; text-align: center; margin-top: 20px; font-size: 22px; font-weight: 400; outline: rgb(59, 74, 84) solid 1px; border-radius: 5px; background-color: var(--nx-bgColor); color: rgb(201, 201, 201); line-height: 2; overflow: hidden; cursor: pointer;">
                     Quero saber mais<p class="faq-opc"
                         style="text-align: left; margin-top: 50px; max-width: 100%; padding: 25px 0px; align-self: center; border-top: 1px solid rgb(85, 85, 85);">
