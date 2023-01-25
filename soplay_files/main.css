@@ -271,7 +271,7 @@ p.filmes-subTitulo {
     text-align: center;
     color: rgb(229, 229, 229);
     font-size: 18px;
-    line-height: 3;
+    line-height: 20px;
 }
 
 @media (max-width: 1100px) {
@@ -587,7 +587,6 @@ p.filmes-subTitulo {
     }
 
     .ft-copy {
-        line-height: 5 !important;
         font-size: 10px !important;
     }
 
