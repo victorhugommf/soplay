@@ -33,13 +33,44 @@ body {
     height: 600px !important;
 }
 
+.faqSelectStyles {
+    width: 100%;
+    height: auto;
+    padding: 0px 50px;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 22px;
+    font-weight: 400;
+    outline: rgb(59, 74, 84) solid 1px;
+    border-radius: 5px;
+    background-color: var(--nx-bgColor);
+    color: rgb(201, 201, 201);
+    line-height: 2;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.faq-opc {
+    text-align: left;
+    margin-top: 10px;
+    max-width: 100%;
+    padding: 25px 0px;
+    align-self: center;
+    border-top: 1px solid rgb(85, 85, 85);
+    display: none;
+}
+
 .faqExpand {
     margin-top: 225px !important;
     margin-bottom: 230px !important;
 }
 
-.faqClicked {
-    height: auto !important;
+.faqClicked .faq-opc {
+    display: block !important;
+}
+
+.faq-secSelect {
+    width: 100%;
 }
 
 .assinar-titulo {
@@ -213,6 +244,19 @@ p.filmes-subTitulo {
     display: none;
 }
 
+.faq-secMain {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 90%;
+    margin-bottom: 50px;
+    margin-top: -50px;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    color: white;
+}
+
 @media (max-width: 1100px) {
     .main-section {
         padding: 0 20px !important;
@@ -364,13 +408,8 @@ p.filmes-subTitulo {
         margin-bottom: 0 !important;
     }
 
-    .faq-secSelect {
-        width: 55% !important;
-    }
-
     .faq-selec {
         font-size: 16px !important;
-        height: 40px !important;
     }
 
     .clicou {
@@ -493,12 +532,9 @@ p.filmes-subTitulo {
         margin-bottom: 50px;
     }
 
-    .faq-secSelect {
-        width: 35% !important;
-    }
 
     .faq-selec {
-        padding: 5px 0 !important;
+        padding: 5px 15px !important;
         font-size: 14px !important;
     }
 
@@ -566,6 +602,14 @@ p.filmes-subTitulo {
 }
 
 @media (max-width: 450px) {
+
+    .header-logo {
+        height: 40px !important;
+    }
+
+    .assinar-titulo {
+        margin-top: 0;
+    }
 
     .dispositivos-secMain {
         margin-top: 50px !important;
